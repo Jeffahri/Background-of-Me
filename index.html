@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="navigator">
+        <nav>
+            <a href="#section1">HOME</a>
+            <a href="#section2">NAME</a>
+            <a href="#section3">STORY</a>
+            <a href="#section4">BACKG</a>
+            <a href="#section5">CONTACTS</a>
+    </div>
+    <div class="mainsection" id="section1">
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">WELCOME!</h2>
+    </div>
+
+    <section id="section2">
+        <div class="containers reveal">
+                <div class="header" style="--clr:cyan">
+                    <h1>Hello!</h1>
+                    <br>
+                    <br>
+                    <h1>I'M</h1>
+                    <h1>MJ Dela Rosa</h1>
+                    <br>
+                    <h1>First Year</h1>
+                    <h1>Collage</h1>
+                </div>
+                    <img src="mark2.jpg" alt="Image of me" class="me" style="--clr:cyan">
+                    <br>
+            </div>
+    </section>
+    <section id="section3">
+        <div class="container reveal" style="--clr:cyan">
+                <h2>Story of Mark</h2>
+            <div class="cards">
+                <div class="front"></div>
+                <div class="text-card">
+                    <p>
+                        Mark Jeffreyson G. Dela Rosa life story begins in Phillipines, where he was born. He was 18 years old and had a passion for coding, listening to music, and playing online games.
+                        Mark had always been fascinated by technology, and from a young age, he would spend hours tinkering with his computer, exploring different programming languages, and learning about the latest software and hardware.
+                        <br>
+                        <br>
+                        Despite his love of technology, Mark was also an avid music lover. He would spend hours listening to his favorite bands and artists, and he found that music helped him to relax and unwind after a long day of coding and gaming.
+                        In addition to his love of technology and music, Mark was also a dedicated gamer. He would spend hours battling it out with other players in online games, honing his skills and learning new strategies.
+                        <br>
+                        <br>
+                        One day, Mark stumbled upon a new game that piqued his interest. It was an online multiplayer game that required players to work together to complete a series of challenges and puzzles.
+                        Excited by the prospect of a new gaming challenge, Mark dove headfirst into the game, spending hours each day strategizing with his teammates and working to overcome obstacles.
+                        <br>
+                        <br>
+                        Over time, Mark became one of the most skilled players in the game, and he quickly gained a reputation as a formidable opponent.
+                        Despite his success in the game, Mark never lost his love for coding and music. He continued to spend hours each day tinkering with code, exploring new programming languages, and discovering new bands and artists.
+                        <br>
+                        <br>
+                        With this realization, Mark continued to explore his passions, always striving to learn more and to push himself to new heights. And though he didn't know what the future held, he was excited to see where his passions would take him next.
+                    </p>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section id="section4">
+        <div class="container reveal"  style="--clr:cyan">
+            <h2>Background</h2>
+            <div class="cards">
+                <div class="front"></div>
+                <div class="text-card">
+                    <h3>educational Background</h3>
+                            <br>
+							<br>
+                        <p>
+                            <h4>Elementary</h4>
+                            <br>
+                            Grace Park Elementary School Main (2010-2016)
+                            <br><br>
+                            <h4>High School</h4>
+                            <br><br>
+                            Florentino Torres High School (2016-2020)
+                            <br><br>
+                            <h4>Senior High School</h4>
+                            <br><br>
+                            Saint Gabriel Academy (2020-2022)
+                            <br><br>
+                            <h4>College</h4>
+                            <br>
+                            Divine Mercy Collage (2022-Present)
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section5">
+        <div class="container reveal"  style="--clr:cyan">
+            <h2>Social media Contacts</h2>
+            <div class="cards">
+                <div class="front"></div>
+                <div class="text-card">
+                   <h3>contacts</h3>
+                   <br>
+                   <p>
+                    <h4>Facebook:</h4><br>
+                    <a href="https://www.facebook.com/mark.delarosa.143?mibextid=ZbWKwL">https://www.facebook.com/mark.delarosa.143?mibextid=ZbWKwL</a>
+                    <br>
+                    <br>
+                    <h4>Instagram:</h4><br>
+                    <a href="https://instagram.com/ahrimark28?igshid=ZDdkNTZiNTM=">https://instagram.com/ahrimark28?igshid=ZDdkNTZiNTM=</a>
+                    <br>
+                    <br>
+                    <h4>Twitter:</h4><br>
+                    <a href="https://twitter.com/ahrimark28?t=Vgh9_oFiPlPYgPBeTnBoYQ&s=09">https://twitter.com/ahrimark28?t=Vgh9_oFiPlPYgPBeTnBoYQ&s=09</a>
+                    <br>
+                    <br>
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function reveal() 
+		{
+		var reveals = document.querySelectorAll(".reveal");
+			for (var i = 0; i < reveals.length; i++){
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+			if(elementTop < windowHeight - elementVisible){
+  			reveals[i].classList.add("active");
+			}else 
+				{
+ 			reveals[i].classList.remove("active");
+				}
+			}
+		}
+		window.addEventListener("scroll", reveal);
+
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px'; 
+        moon.style.left = - value * 0.5 + 'px';
+        mountain.style.top = - value * 0.15 + 'px'; 
+        road.style.top =  value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+        })
+    </script>
+
+</body>
+</html>

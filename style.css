@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Heavy';
+}
+body{
+    background: #0a2a43;
+}
+.navigator{
+    position: fixed;
+    z-index: 2;
+    background: transparent;
+}
+nav{
+    height: 40px;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    animation: fade 5s ease;
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: cyan;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav a:hover{
+    transform: scale(1.01);
+}
+nav a:hover:after{
+    width: 100%;
+}
+.mainsection{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainsection:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+.mainsection:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+.mainsection img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text{
+    position: relative;
+    color: white;
+    z-index: 1;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Heavy';
+	text-shadow: 2px 2px 5px rgb(0, 0, 0),
+	5px 5px 70px rgba(223, 215, 215, 0.5);
+    font-size: 10rem;
+    animation: fade 5s ease;
+    font-family: 'Franklin Gothic Heavy';
+}
+#text:hover{
+    transform: scale(1.01);
+}
+#road{
+    z-index: 2;
+}
+section{
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+}
+section .me{
+    height: 25rem;
+    width: 30rem;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);   
+    border-radius: 50% 20% / 10% 40%;
+    flex: 1;
+	text-align: center;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+section .me:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 15px var(--clr);
+}
+section .header{
+    margin: 0;
+    flex: 1;
+	padding: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+section .containers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+section h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+section h1:hover{
+    transform: scale(1.01);
+    text-shadow: 0 0 15px var(--clr);
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section h3{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+section h3:hover{
+    transform: scale(1.01);
+    text-shadow: 0 0 15px var(--clr);
+}
+section h4{
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section h2:hover{
+    transform: scale(1.01);
+    text-shadow: 0 0 15px var(--clr);
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .cards{
+    display: flex;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+section .cardsp2{
+    display: block;
+}
+section .cards .text-card{
+    background: transparent;
+    margin: 20px;
+    padding: 20px;
+    border: 5%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3%;
+    transition: 0.3s;
+}
+section .cardsp2 .text-card{
+    background: transparent;
+    margin: 20px;
+    padding: 20px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 3%;
+    transition: 0.3s;
+}
+section .container h2{
+    text-align: center;
+}
+section:nth-child(1){
+    background: linear-gradient(45deg, #030303, #0f3d61);
+    background-attachment: fixed;
+}
+section:nth-child(2){
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #0f3d61, #030303);
+}
+section:nth-child(3){
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #030303, #0f3d61);
+}
+section:nth-child(4){
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #0f3d61, #030303);
+}
+section:nth-child(5){
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #030303, #0f3d61);
+}
+section:nth-child(6){
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #0f3d61, #030303);
+}
+section .container{
+    margin: 100px;
+    text-align: center;
+}
+section .container a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 5s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    align-items: center;
+}
+.front {
+  background-image: linear-gradient(45deg, #0a283f, #222020);
+}
+.text-card {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+.container:hover > .cards {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
